@@ -7,6 +7,10 @@ body, html {
 	width: 100% !important;
 	height: 100% !important;
 }
+#logo {
+	width: 80px;
+	float: left;
+}
 h2 {
 	margin: 0 0 20px 0;
 	font-weight: 500;
@@ -101,10 +105,14 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 #menu a.navbar-brand {
 	font-size: 22px;
-	color: #eee;
-	font-weight: 400;
+	color: #a6c44c;
+	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 1px;
+	margin-top: 5%;
+}
+#menu a.navbar-brand span {
+	color: red;
 }
 #menu.navbar-default .navbar-nav > li > a {
 	text-transform: uppercase;
@@ -178,7 +186,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 .intro h1 {
 	color: #fff;
-	font-size: 68px;
+	font-size: 40px;
 	font-weight: 400;
 	margin-top: 0;
 	margin-bottom: 10px;
