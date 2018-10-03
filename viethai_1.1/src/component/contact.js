@@ -28,7 +28,7 @@ export default class Portfolio extends React.Component {
     }
     portfolioItem() {
         return this.state.dataImage.map((value, index) => {
-            // console.log('value is =========> ', value)
+            console.log('value is =========> ', value)
             return (
                 <div className="col-sm-6 col-md-4 col-lg-4 residential" key={index}>
                     <div className="portfolio-item">
@@ -44,29 +44,49 @@ export default class Portfolio extends React.Component {
     }
     render() {
         return (
-            <div id="portfolio">
+            <div id="contact">
                 <div className="container">
-                    <div className="section-title text-center center">
-                        <h2>Các Dự Án đã thực hiện</h2>
+                    <div className="section-title text-center">
+                        <h2>Liên Hệ với chúng tôi</h2>
                         <hr />
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</p>
                     </div>
-                    <div className="categories">
-                        <ul className="cat">
-                            <li>
-                                <ol className="type">
-                                    <li><a href="" data-filter="*" className="active">Tất cả</a></li>
-                                    <li><a href="" data-filter=".residential">Nhà ở</a></li>
-                                    <li><a href="" data-filter=".office">Văn Phòng</a></li>
-                                    <li><a href="" data-filter=".commercial">Phụ kiện, thiết bị, nội thất</a></li>
-                                </ol>
-                            </li>
-                        </ul>
-                        <div className="clearfix"></div>
-                    </div>
-                    <div className="row">
-                        <div className="portfolio-items">
-                            {this.portfolioItem()}
+                    <div className="col-md-4">
+                        <h3>Thông tin liên hệ</h3>
+                        <div className="contact-item"> <span>Address</span>
+                            <p>4321 California St,<br />> San Francisco, CA 12345</p>
                         </div>
+                        <div className="contact-item"> <span>Email</span>
+                            <p>info@company.com</p>
+                        </div>
+                        <div className="contact-item"> <span>Phone</span>
+                            <p> +1 123 456 1234</p>
+                        </div>
+                    </div>
+                    <div className="col-md-8">
+                        <h3>Để lại tin nhắn cho chúng tôi</h3>
+                        <form name="sentMessage" id="contactForm" noValidate>
+                            <div className="row">
+                                <div className="col-md-6">
+                                    <div className="form-group">
+                                        <input type="text" id="name" className="form-control" placeholder="Name" required="required" />
+                                        <p className="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <div className="col-md-6">
+                                    <div className="form-group">
+                                        <input type="email" id="email" className="form-control" placeholder="Email" required="required" />
+                                        <p className="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="form-group">
+                                <textarea name="message" id="message" className="form-control" rows="4" placeholder="Message" required></textarea>
+                                <p className="help-block text-danger"></p>
+                            </div>
+                            <div id="success"></div>
+                            <button type="submit" className="btn btn-custom btn-lg">Send Message</button>
+                        </form>
                     </div>
                 </div>
             </div>

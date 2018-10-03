@@ -28,7 +28,7 @@ export default class Portfolio extends React.Component {
     }
     portfolioItem() {
         return this.state.dataImage.map((value, index) => {
-            // console.log('value is =========> ', value)
+            console.log('value is =========> ', value)
             return (
                 <div className="col-sm-6 col-md-4 col-lg-4 residential" key={index}>
                     <div className="portfolio-item">
@@ -44,29 +44,18 @@ export default class Portfolio extends React.Component {
     }
     render() {
         return (
-            <div id="portfolio">
-                <div className="container">
-                    <div className="section-title text-center center">
-                        <h2>Các Dự Án đã thực hiện</h2>
-                        <hr />
-                    </div>
-                    <div className="categories">
-                        <ul className="cat">
-                            <li>
-                                <ol className="type">
-                                    <li><a href="" data-filter="*" className="active">Tất cả</a></li>
-                                    <li><a href="" data-filter=".residential">Nhà ở</a></li>
-                                    <li><a href="" data-filter=".office">Văn Phòng</a></li>
-                                    <li><a href="" data-filter=".commercial">Phụ kiện, thiết bị, nội thất</a></li>
-                                </ol>
-                            </li>
+            <div id="footer">
+                <div className="container text-center">
+                    <div className="social">
+                        <ul>
+                            <li><a href=""><i className="fa fa-facebook"></i></a></li>
+                            <li><a href=""><i className="fa fa-twitter"></i></a></li>
+                            <li><a href=""><i className="fa fa-google-plus"></i></a></li>
+                            <li><a href=""><i className="fa fa-pinterest"></i></a></li>
+                            <li><a href=""><i className="fa fa-youtube"></i></a></li>
                         </ul>
-                        <div className="clearfix"></div>
                     </div>
-                    <div className="row">
-                        <div className="portfolio-items">
-                            {this.portfolioItem()}
-                        </div>
+                    <div>
                     </div>
                 </div>
             </div>

@@ -13,7 +13,7 @@ export default class Header extends React.Component {
                             <button type='button' className='navbar-toggle collapsed' data-toggle='collapse' data-target='#bs-example-navbar-collapse-1'>
                                 <span className='sr-only'>Toggle navigation</span> <span className='icon-bar'></span> <span className='icon-bar'></span>
                                 <span className='icon-bar'></span> </button>
-                            <img id='logo' src={require('../img/logo.png')} alt='' />
+                            <img id='logo' src='/img/logo.png' alt='' />
                             <a className='navbar-brand page-scroll' href='#page-top'><span>V</span>IET HAI CONTRUCTIONS</a> </div>
 
                         <div className='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
@@ -31,7 +31,7 @@ export default class Header extends React.Component {
                     <div className='Modern-Slider'>
                         <div className='item'>
                             <div className='img-fill'>
-                                <img src={require('../img/slider5.jpeg')} alt='' />
+                                <img src='/img/slider5.jpeg' alt='' />
                                 <div className='info'>
                                     <div>
                                         <h3>Thiết kế và thi công nội thất</h3>
@@ -41,7 +41,7 @@ export default class Header extends React.Component {
                         </div>
                         <div className='item'>
                             <div className='img-fill'>
-                                <img src={require('../img/slider4.jpg')} alt='' />
+                                <img src='/img/slider4.jpg' alt='' />
                                 <div className='info'>
                                     <div>
                                         <h3>Thi công Xây dựng</h3>
@@ -51,7 +51,7 @@ export default class Header extends React.Component {
                         </div>
                         <div className='item'>
                             <div className='img-fill'>
-                                <img src={require('../img/slider3.jpg')} alt='' />
+                                <img src='/img/slider3.jpg' alt='' />
                                 <div className='info'>
                                     <div>
                                         <h3>Tư vấn xây dựng</h3>
@@ -61,7 +61,7 @@ export default class Header extends React.Component {
                         </div>
                         <div className='item'>
                             <div className='img-fill'>
-                                <img src={require('../img/slider2.jpg')} alt='' />
+                                <img src='/img/slider2.jpg' alt='' />
                                 <div className='info'>
                                     <div>
                                         <h3>Nội thất hiện đại</h3>
@@ -71,7 +71,7 @@ export default class Header extends React.Component {
                         </div>
                         <div className='item'>
                             <div className='img-fill'>
-                                <img src={require('../img/slider1.jpg')} alt='' />
+                                <img src='/img/slider1.jpg' alt='' />
                                 <div className='info'>
                                     <div>
                                         <h3>Thi công chuyên nghiệp</h3>
